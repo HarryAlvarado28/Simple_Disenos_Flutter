@@ -1,5 +1,6 @@
 
 import 'package:disenos/src/pages/basico_page.dart';
+import 'package:disenos/src/pages/scroll_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -24,13 +25,14 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.cyan,
       ),
       // home: MyHomePage(title: 'Flutter Demo Home Page'),
-      initialRoute: 'basico',
+      initialRoute: 'scroll',
       routes: {
         'basico': (BuildContext context) => BasicoPage(),
+        'scroll': (BuildContext context) => ScrollPage(),
       },
     );
   }
-  
+
 
 
 }
