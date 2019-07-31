@@ -36,12 +36,22 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.cyan,
       ),
       // home: MyHomePage(title: 'Flutter Demo Home Page'),
-      initialRoute: 'botones',
-      routes: {
-        'basico': (BuildContext context) => BasicoPage(),
-        'scroll': (BuildContext context) => ScrollPage(),
-        'botones': (BuildContext context) => BotonesPage(),
-      },
+      // initialRoute: 'scroll',
+      // routes: {
+      //   'basico': (BuildContext context) => BasicoPage(),
+      //   'scroll': (BuildContext context) => ScrollPage(),
+      //   'botones': (BuildContext context) => BotonesPage(),
+      // },
+      home: Scaffold(
+        body: PageView(
+          scrollDirection: Axis.horizontal,
+          children: <Widget>[
+            BasicoPage(),
+            ScrollPage(),
+            BotonesPage()
+          ],
+        ),
+      ),
     );
   }
 
